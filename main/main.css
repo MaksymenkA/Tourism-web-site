@@ -1,0 +1,413 @@
+body {
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Red Rose', cursive;   */
+}
+
+/* First nav bar  */
+.logo {
+  width: auto;
+  float: left;
+  height: auto;
+  max-width: 200px;
+  max-height: 170px;
+  margin-top: 26px;
+  margin-left: 40px;
+}
+.list-unstyled {
+  width: 71%;
+  float: right;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0px !important;
+  padding-right: 5%;
+}
+.clock p,
+.phone p {
+  margin-bottom: 0px;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+.clock i,
+.phone i {
+  color: #01b3a7;
+  font-size: 24px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.list-unstyled button {
+  border: #01b3a7 2px solid;
+  background-color: white;
+  /* padding: 5px 15px; */
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.vertical {
+  border-left: 1px solid gray;
+  height: 32px;
+  margin-left: 15px;
+  opacity: 40%;
+}
+.list-unstyled button:hover {
+  background-color: #01b3a7;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-outer {
+  height: 70px;
+}
+
+/*  Fixed Nav bar  */
+.navbar {
+  background-color: #162e44 !important;
+  padding: 0px 16px !important;
+}
+.left-navbar a {
+  color: white !important;
+  padding: 15px !important;
+  letter-spacing: 0.05em;
+  font-size: 18px !important;
+  border-top: 3px solid transparent;
+  margin: 0px 10px;
+  transition: 0.35s;
+}
+
+.left-navbar .nav-link:hover,
+.left-navbar .active .nav-link:hover,
+.left-navbar .active .nav-link {
+  border-top: #01b3a7 3px solid;
+  background: rgba(255, 255, 255, 0.11);
+  margin: 0px 10px;
+}
+
+.left-navbar .active .nav-link {
+  background: rgba(255, 255, 255, 0.2);
+}
+.right-navbar {
+  width: 30%;
+  justify-content: flex-end;
+}
+.left-navbar {
+  width: 70%;
+}
+.right-navbar a {
+  color: white !important;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.right-navbar a:hover {
+  color: #01b3a7 !important;
+}
+
+/* Slider */
+.carousel-item {
+  width: 100%;
+  height: 450px;
+}
+.carousel-item img {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center;
+  width: 100%;
+  height: 450px;
+  opacity: 2;
+}
+
+.carousel-caption {
+  right: 60%;
+  bottom: 30%;
+  text-align: left;
+  width: 50%;
+}
+.carousel-caption button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: white 2px solid;
+  color: white;
+}
+.carousel-caption button:hover {
+  background-color: #01b3a7;
+  color: white;
+  border: #01b3a7 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-caption h1 {
+  font-size: 56px;
+}
+
+/* Gallery with tours  */
+.list-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 60px;
+  padding-top: 50px;
+}
+.list-box img {
+  height: 420px !important;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(70%);
+  /* transition: all ease 0.35s; */
+  transform-origin: 50% 65%;
+  transition: transform 0.5s, filter 0.1s ease-in-out;
+}
+
+/* @media (min-width: 1000px) {
+  .list-box img {
+    height: 320px;
+  }
+} */
+.list-box h5 {
+  position: relative;
+  color: white;
+  text-align: center;
+  bottom: 50px;
+  font-size: x-large;
+}
+.list-box img:hover {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+.link a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+.link img {
+  margin-left: 10px;
+}
+.link {
+  padding-bottom: 50px;
+}
+#list-block {
+  background-color: #f7f7f7;
+}
+
+/* Discover new Horizons */
+.discover-block img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  float: left;
+}
+.discover-block {
+  padding: 100px 5px 50px;
+  width: 95%;
+  margin: 5px auto;
+}
+.discover-block h1 {
+  font-weight: 600;
+}
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-tabs .nav-link {
+  color: gray;
+  border-bottom: 3px solid transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: white white transparent #fff !important;
+  color: #01b3a7;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: white white #01b3a7 #fff !important;
+  border-bottom: 3px solid #01b3a7;
+  color: #01b3a7;
+}
+.discover-box {
+  width: 50%;
+  padding: 40px 20px;
+  float: left;
+}
+.tab-content {
+  margin-top: 25px;
+}
+.tabs button {
+  padding: 15px 40px;
+  margin: 15px;
+}
+.get-button {
+  border: 2px solid transparent;
+  background-color: #01b3a7;
+  color: white;
+  transition: 250ms all ease-in;
+}
+.read-button {
+  background-color: transparent;
+  transition: 250ms all ease-in;
+}
+.get-button:hover {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  transition: 250ms all ease-in-out;
+}
+.read-button:hover {
+  border: 2px solid transparent;
+  background-color: #01b3a7;
+  color: white;
+  transition: 250ms all ease-in-out;
+}
+
+/* Our services */
+
+#services article img {
+  width: 50px;
+  margin: 0px 10px;
+}
+#services article {
+  padding: 54px 18px;
+  border: 8px solid #f4f4f4;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: 250ms all ease-in;
+}
+#services p {
+  font-size: 15px;
+  color: gray;
+}
+#services .container {
+  max-width: 1300px;
+  margin-bottom: 30px;
+}
+#services article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border: 8px solid white;
+  transition: 250ms all ease-in-out;
+}
+#services h5:hover {
+  color: #01b3a7;
+  transition: all 0.3s ease-in-out;
+}
+#services .row {
+  padding: 30px;
+}
+
+/* Hot Tours */
+#tours {
+  margin-bottom: 70px;
+}
+#tours article {
+  border: 1px solid lightgray;
+}
+#tours .right-side {
+  flex-basis: 50%;
+  padding: 60px 50px;
+}
+
+.star-rate span {
+  font-size: 25px;
+  color: orange;
+}
+.star-rate .reviews {
+  margin: 9px 20px;
+  color: #9b9b9b;
+}
+#tours .right-side button {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 15px 25px;
+  font-weight: 600;
+}
+#tours .right-side button:hover {
+  border: 2px solid transparent;
+  background-color: #01b3a7;
+  color: white;
+  transition: 250ms all ease-in;
+}
+#tours img {
+  height: 100%;
+  width: 100%;
+}
+#tours .price {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  right: 0px;
+  top: 0px;
+  /* bottom: 354px; */
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: white;
+}
+#tours .price::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 400%;
+  height: 100%;
+  background: #01b3a7;
+  transform: skew(45deg);
+  transform-origin: 50% 100%;
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+}
+#tours .tour {
+  padding: 0;
+  margin: 20px 0px;
+}
+/* Workers */
+
+#workers img {
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+  border: 8px solid white;
+}
+#workers img:hover {
+  transition: all 0.5s ease-in-out;
+  border: 6px solid #01b3a7;
+  /* position: relative;
+  bottom: 10px; */
+}
+#workers .row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+#workers article {
+  margin-bottom: 50px;
+}
+#workers .worker-info {
+  background-color: #f7f7f7;
+  padding: 15px 10px 35px;
+}
+#workers .capture {
+  height: 50%;
+  background: linear-gradient(to top, #f7f7f7 50%, white 50%);
+}
+
+/* Booking */
+#booking {
+  margin-bottom: 100px;
+}
+#booking img {
+  width: inherit;
+  height: 450px;
+  object-fit: cover;
+  background: no-repeat;
+}
