@@ -245,7 +245,8 @@ body {
   padding: 15px 40px;
   margin: 15px;
 }
-.get-button {
+.get-button,
+.capture button {
   border: 2px solid transparent;
   background-color: #01b3a7;
   color: white;
@@ -255,7 +256,8 @@ body {
   background-color: transparent;
   transition: 250ms all ease-in;
 }
-.get-button:hover {
+.get-button:hover,
+.capture button:hover {
   border: 2px solid black;
   background-color: transparent;
   color: black;
@@ -403,11 +405,132 @@ body {
 
 /* Booking */
 #booking {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+  position: relative;
+  height: 470px;
+  /* height: 100%; */
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
 }
-#booking img {
+/* #booking img {
   width: inherit;
   height: 450px;
   object-fit: cover;
   background: no-repeat;
+} */
+#booking .capture {
+  text-align: center;
+  width: 50%;
+  margin: 5px auto;
+  color: white;
+}
+
+#booking .capture-block {
+  position: relative;
+  bottom: 440px;
+  height: 430px;
+  padding: 80px 0px;
+  background: rgba(24, 26, 35, 0.21);
+  margin: 0px 20px;
+}
+.capture button {
+  border: 2px solid transparent;
+  background-color: #01b3a7;
+  color: white;
+  transition: 250ms all ease-in;
+  padding: 15px 40px;
+  margin: 15px;
+}
+
+.capture button:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 250ms all ease-in-out;
+}
+
+/* Gallery */
+.gallery img {
+  height: 150px;
+}
+.owl-carousel {
+  margin: 25px;
+  width: auto !important;
+}
+.gallery h4 {
+  line-height: 50px;
+  padding-top: 10px;
+}
+
+/* Footer */
+footer {
+  /* padding-top: 50px; */
+  background-color: #162e44;
+  color: white;
+}
+footer i {
+  color: #01b3a7;
+  font-size: 24px !important;
+  margin-right: 25px;
+  margin-top: 2px;
+}
+footer p {
+  font-size: 15px;
+  /* margin-bottom: 5px; */
+
+}
+footer h6{
+  margin-bottom: 25px;
+}
+footer li{
+  line-height: 25px;
+}
+.news ul{
+  width: 80%;
+}
+.news li{
+  list-style: none;  
+}
+.news li a{
+  color: #01b3a7;
+  display: contents;
+}
+.news li a:hover{
+  color: #50ba87;
+  text-decoration: none;
+}
+.news li p{
+  font-size: 12px;
+  color: lightgray;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+.links ul{
+  columns: 2;
+  margin-left: 18px;
+}
+.links li{
+  color: #01b3a7;
+}
+.links a{
+  color: white;
+}
+.links a:hover{
+  color: #50ba87;
+  text-decoration: none;
+}
+.links button{
+  border: 2px solid transparent;
+  background-color: #01b3a7;
+  color: white;
+  transition: 250ms all ease-in;
+  padding: 15px 40px;
+  margin: 15px 0;
+}
+.links button:hover{
+background: #50ba87;
+transition: 250ms all ease-in;
+
 }
