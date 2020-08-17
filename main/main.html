@@ -13,12 +13,13 @@
 
     <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script src="../parallax.js-1.5.0/parallax.js"></script>
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
 
     <script src="https://use.fontawesome.com/6a1fb96aa0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -29,11 +30,19 @@
 </head>
 
 <body>
-    <div class="navbar-outer d-block">
+
+
+
+    <div class="navbar-outer ">
         <div class="container-fluid">
+            <a href="javascript:void(0);" onclick="openMainMenu()"><i class="fa fa-bars"></i></a>
+
             <a href="#"> <img src="/images/logo-default-450x37.png" class="logo"></a>
+            <a href="javascript:void(0);" onclick="openMenu()"> <i class="fa fa-ellipsis-v"></i></a>
+
+
             <div>
-                <ul class="list-unstyled d-flex">
+                <ul class="list-unstyled" id="contacts">
                     <li class="clock ">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                         <p class="float-right">9:00 am - 5:00 pm</p>
@@ -53,7 +62,26 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light w-100 sticky-top">
+    <!-- Responsive navbar -->
+
+    <!-- <div>
+        <ul id="contacts">
+            <li class="clock">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <p class="float-right">9:00 am - 5:00 pm</p>
+            </li>
+
+            <li class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p class="float-right">+1 323-913-4688</p>
+            </li>
+            <button>
+                Get a Free Quote
+            </button>
+            </li>
+        </ul>
+    </div> -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light w-100 " id="mainNav">
         <ul class="navbar-nav left-navbar">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
@@ -118,16 +146,17 @@
 
 
     <section id="list-block">
+        <!-- <div class="list-box"> -->
         <div class="list-box">
-            <div class="col-md-4">
+            <div class="col-md-4 col-9 image-block">
                 <img src="../images/ballon.jpg" alt="">
                 <h5><b>Balloon Flights</b></h5>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-9 image-block">
                 <img src="../images/mountain.jpg" alt="">
                 <h5><b>Mountain Holiday</b></h5>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-9 image-block">
                 <img src="../images/image_processing20191111-4-37npt1.jpg" alt="">
                 <h5><b>Beach Holidays</b></h5>
             </div>
@@ -188,11 +217,11 @@
     </section>
 
     <section id="services" class="section section-sm">
-        <div class="container">
+        <div class="container" style="background-color: white;">
             <h1 class="text-center"><b>Our services</b></h1>
             <div class="row ">
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-slider-64.png" alt="">
                         </div>
@@ -205,7 +234,7 @@
                     </article>
                 </div>
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-certificate-64.png" alt="">
                         </div>
@@ -217,7 +246,7 @@
                     </article>
                 </div>
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-star-64.png" alt="">
                         </div>
@@ -230,7 +259,7 @@
                     </article>
                 </div>
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-headphones-64.png" alt="">
                         </div>
@@ -244,7 +273,7 @@
                     </article>
                 </div>
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-fire-alt-64.png" alt="">
                         </div>
@@ -257,7 +286,7 @@
                     </article>
                 </div>
                 <div class="col-sm-6 col-lg-4 service">
-                    <article class="d-flex">
+                    <article>
                         <div class="float-left">
                             <img src="../images/icons8-wallet-64.png" alt="">
                         </div>
@@ -275,7 +304,7 @@
         <div class="container">
             <h1 class="text-center"><b>Hot Tours</b></h1>
             <div class="row ">
-                <div class="col-sm-6 col-md-12 tour">
+                <div class="col-sm-12 col-md-12 tour">
                     <article>
                         <div class="d-flex flex-column flex-md-row">
                             <div style="flex-basis: 50%;">
@@ -308,11 +337,11 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-sm-6 col-md-12 tour">
+                <div class="col-sm-12 col-md-12 tour">
                     <article>
                         <div class="d-flex flex-column flex-md-row">
                             <div style="flex-basis: 50%;">
-                                <img src="../images/84883228.jpg" alt="">
+                                <img src="../images/unnamed.jpg" alt="">
                             </div>
                             <div class="right-side">
                                 <h5><b>Mauritius Island, Africa</b></h5>
@@ -441,7 +470,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-4 contact" style="padding: 50px 15px 30px;">
+                <div class="col-sm-6 col-md-6 col-lg-4 contact" style="padding: 50px 15px 30px;">
                     <h6 class="text-uppercase"><b>Contact us</b></h6>
                     <ul class="p-0">
                         <li class="d-flex">
@@ -459,7 +488,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-md-12 col-lg-4 news" style="padding: 50px 15px 30px;">
+                <div class="col-sm-6 col-md-6 col-lg-4 news" style="padding: 50px 15px 30px;">
                     <h6 class="text-uppercase"><b>Popular news</b></h6>
                     <ul class="p-0">
                         <li>
@@ -472,7 +501,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-md-12 col-lg-4 links" style="padding: 50px 15px 30px;">
+                <div class="col-sm-6 col-md-6 col-lg-4 links" style="padding: 50px 15px 30px;">
                     <h6 class="text-uppercase"><b>Quick Links</b></h6>
                     <ul class="p-0">
                         <li>
@@ -496,7 +525,7 @@
             </div>
         </div>
     </footer>
-   
+
 </body>
 
 </html>
