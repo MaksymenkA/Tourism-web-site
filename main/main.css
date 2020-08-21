@@ -46,7 +46,6 @@ body {
 }
 
 @media (min-width: 360px) {
- 
   .list-unstyled {
     display: none;
     position: fixed;
@@ -104,7 +103,7 @@ body {
   .fa-ellipsis-v {
     display: none !important;
   }
-  .vertical{
+  .vertical {
     display: block;
   }
   .clock i,
