@@ -11,11 +11,17 @@
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/6a1fb96aa0.js"></script>
     <script src="../header/header.js"></script>
     <script src="about.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+
 
 </head>
 
@@ -99,8 +105,196 @@
         </div>
     </section>
 
+    <!-- Why choose us  -->
     <section>
+        <div class="container">
+            <div class="row" style="margin-top: 60px;
+            margin-bottom: 70px;">
+                <div class="col-lg-5 col-xl-6 image-block">
+                    <img class="image_choose" src="../images/about-1-519x564.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-xl-6 tabs-block">
+                    <h1>Why choose us</h1>
+                    <div class="tabs">
+                        <ul class="nav nav-tabs" id="choose_tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active text-uppercase" id="experience-tab"
+                                    data-toggle="tab" href="#experience" role="tab" aria-controls="experience"
+                                    aria-selected="true">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" id="skills_tab" data-toggle="tab"
+                                    href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" id="mission_tab" data-toggle="tab"
+                                    href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
+                            </li>
+                        </ul>
 
+                        <div class="tab-content" id="tab_content">
+                            <!-- First tab -->
+                            <div class="tab-pane fade show active" id="experience" role="tabpanel"
+                                aria-labelledby="experience_tab">
+                                <p style="margin: 30px 0px;">Contrary to popular belief, Lorem Ipsum is
+                                    not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                <article class="progress-linear ">
+                                    <div class="progress-header">
+                                        <p>Tours</p>
+                                    </div>
+                                    <div class="progress-bar-linear-wrap">
+                                        <div class="progress-bar-linear"
+                                            style="width: 79%; background: #50ba87; height: inherit; position: relative;">
+                                            <span class="progress-value"> 79% </span>
+                                            <span style="background: #50ba87;" class="progress-marker"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="progress-linear ">
+                                    <div class="progress-header">
+                                        <p>Excursions</p>
+                                    </div>
+                                    <div class="progress-bar-linear-wrap">
+                                        <div class="progress-bar-linear"
+                                            style="width: 72%; background: #e7a855; height: inherit; position: relative;">
+                                            <span class="progress-value"> 72% </span>
+                                            <span style="background: #e7a855;" class="progress-marker"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="progress-linear ">
+                                    <div class="progress-header">
+                                        <p>Hotel Bookings</p>
+                                    </div>
+                                    <div class="progress-bar-linear-wrap">
+                                        <div class="progress-bar-linear"
+                                            style="width: 88%; background: #01b3a7; height: inherit; position: relative;">
+                                            <span class="progress-value"> 88% </span>
+                                            <span style="background: #01b3a7;" class="progress-marker"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Second tab content -->
+                            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills_tab">
+                                <div class="row text-center">
+                                    <div class="col-sm-4">
+                                        <div class="circle-wrap">
+                                            <div class="circle">
+                                                <div class="mask-second full">
+                                                    <div class="fill-second"></div>
+                                                </div>
+                                                <div class="mask-second half">
+                                                    <div class="fill-second"></div>
+                                                </div>
+                                                <div class="inside-circle"> 87% </div>
+                                                <p style="position: relative; top: 150px;"><b>TOURS</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="circle-wrap">
+                                            <div class="circle">
+                                                <div class="mask full">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="mask half">
+                                                    <div class="fill"></div>
+                                                </div>
+                                                <div class="inside-circle"> 74% </div>
+                                                <p style="position: relative; top: 150px;"><b>EXCURSIONS</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="circle-wrap">
+                                            <div class="circle">
+                                                <div class="mask-third full">
+                                                    <div class="fill-third"></div>
+                                                </div>
+                                                <div class="mask-third half">
+                                                    <div class="fill-third"></div>
+                                                </div>
+                                                <div class="inside-circle"> 99% </div>
+                                                <p style="position: relative; top: 150px; width: max-content;"><b>HOTEL
+                                                        BOOKINGS</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-block" style="margin-top: 10px;">
+                                    <button class="get-button"><b>Get in touch</b></button>
+                                    <button class="read-button"><b>Read more</b></button>
+                                </div>
+
+                            </div>
+
+                            <!-- THird tab content -->
+                            <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission_tab">
+                                <p style="margin: 30px 0px;">Orci nulla pellentesque dignissim enim sit. Elit
+                                    ullamcorper dignissim cras
+                                    tincidunt
+                                    lobortis feugiat vivamus. Nibh mauris cursus mattis molestie a iaculis at erat
+                                    pellentesque.</p>
+                                <ul class="list">
+                                    <li>Lorem ipsum</li>
+                                    <li>Consectetur adipiscing</li>
+                                    <li>Sed do eiusmod</li>
+                                    <li>Tempor incididunt</li>
+                                    <li>Sem fringilla</li>
+                                    <li>Ut venenatis</li>
+                                </ul>
+                                <div class="button-block">
+                                    <button class="get-button"><b>Get in touch</b></button>
+                                    <button class="download-button"><b>Download presentation</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fluid">
+        <div class="container">
+            <h3 class="text-center"><b>Destinations</b></h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div>
+                <article>
+                    <img src="../images/gallery-image-11-420x308.jpg" alt="">
+                    <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                </article>
+                <div>               
+                    <p>France</p>
+                </div>
+            </div>
+      
+            <div>
+                <img src="../images/gallery-image-12-420x308.jpg" alt="">
+                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                <p>Italy</p>
+            </div>
+            <div>
+                <img src="../images/gallery-image-13-420x308.jpg" alt="">
+                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                <p>Egypt</p>
+            </div>
+            <div>
+                <img src="../images/gallery-image-14-420x308.jpg" alt="">
+                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                <p>Dubai</p>
+            </div>
+            <div>
+                <img src="../images/gallery-image-15-420x308.jpg" alt="">
+                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                <p>Spain</p>
+            </div>
+            <div>
+                <img src="../images/gallery-image-16-420x308.jpg" alt="">
+                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
+                <p>Africa</p>
+            </div>
+        </div>
     </section>
 
     <footer>

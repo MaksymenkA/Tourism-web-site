@@ -1,1 +1,52 @@
+.box-position{
+    background-image: url(../images/sea_animation.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 150px);
+    height: calc(100% + 150px);
+    will-change: transform;
+    animation: bgPos 100s linear infinite;
+    transform: translate3d(-75px, -75px, 0) rotate(0.001deg);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(75%);
+}
+.custom-breadcrumb{
+    position: relative;
+    overflow: hidden;
+    padding: 15% 0;
+    text-align: center;
+    background-color: #cccccc;
+    z-index: 1;
+}
+.text-path .d-flex h5{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.text-path .d-flex h5 a{
+    color: white;
 
+}
+.text-path h1{
+    font-size:45px ;
+    color: white;
+}
+
+@keyframes bgPos{
+    25% {
+        transform: translate3d(-150px, -150px, 0) rotate(0.001deg);
+    }
+    75% {
+        transform: translate3d(0, 0, 0) rotate(0.001deg);
+    }
+}
+@media (min-width:990px){
+    .custom-breadcrumb{
+        padding: 11% 0;
+    }
+}
