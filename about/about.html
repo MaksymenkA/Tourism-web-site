@@ -17,11 +17,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/6a1fb96aa0.js"></script>
     <script src="../header/header.js"></script>
+    <script src="../parallax.js-1.5.0/parallax.js"></script>
     <script src="about.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
 
 </head>
 
@@ -254,53 +255,138 @@
             </div>
         </div>
     </section>
+
+    <!-- Destinations -->
     <section class="section-fluid">
         <div class="container">
             <h3 class="text-center"><b>Destinations</b></h3>
         </div>
-        <div class="owl-carousel owl-theme">
-            <div>
-                <article>
-                    <img src="../images/gallery-image-11-420x308.jpg" alt="">
-                    <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
-                </article>
-                <div>               
-                    <p>France</p>
-                </div>
+        <div class="owl-carousel owl-theme" id="owl-gallery">
+            <div id="gallery" data-toggle="modal" data-target="#exampleModal">
+                <img src="../images/gallery-image-11-420x308.jpg" alt="">
+                <p>France</p>
             </div>
-      
             <div>
                 <img src="../images/gallery-image-12-420x308.jpg" alt="">
-                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
                 <p>Italy</p>
             </div>
             <div>
                 <img src="../images/gallery-image-13-420x308.jpg" alt="">
-                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
                 <p>Egypt</p>
             </div>
             <div>
                 <img src="../images/gallery-image-14-420x308.jpg" alt="">
-                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
                 <p>Dubai</p>
             </div>
             <div>
                 <img src="../images/gallery-image-15-420x308.jpg" alt="">
-                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
                 <p>Spain</p>
             </div>
             <div>
                 <img src="../images/gallery-image-16-420x308.jpg" alt="">
-                <div class="increase-icon"><i class="fa fa-search-plus"></i></div>
                 <p>Africa</p>
             </div>
+
         </div>
+    </section>
+
+    <!-- What People Say -->
+    <section class="opinion-block" style="margin-top: 50px;">
+        <div class="container">
+            <h3 class="text-center"><b>What People Say</b></h3>
+        </div>
+
+        <div class="owl-carousel owl-theme owl-modern mr-auto ml-auto col-lg-10 col-md-10 col-sm-10 "
+            id="opinion-carousel" data-items="1" data-autoplay="true">
+            <article class="opinion">
+                <div class="text-center">
+                    <img style="width: 100px; height: 100px;" src="../images/user-16-100x100.jpg" alt="">
+                    <div class="opinion-text">
+                        <p>Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Diam phasellus vestibulum lorem
+                            sed
+                            risus ultricies. Aenean et tortor at risus viverra adipiscing. Aliquet enim tortor at auctor
+                            urna.
+                            Tortor aliquam nulla facilisi cras fermentum. Malesuada pellentesque elit eget gravida cum
+                            sociis
+                            natoque.</p>
+                    </div>
+                    <h5><b>Catherine Williams</b></h5>
+                    <p class="m-0" style="color: #01b3a7;">Regular Client</p>
+                </div>
+            </article>
+
+            <article class="opinion">
+                <div class="text-center">
+                    <img style="width: 100px; height: 100px;" src="../images/user-17-100x100.jpg" alt="">
+                    <div class="opinion-text">
+                        <p>Sodales ut etiam sit amet nisl purus. Maecenas accumsan lacus vel facilisis volutpat est.
+                            Suscipit adipiscing bibendum est ultricies integer quis auctor. Viverra aliquet eget sit
+                            amet
+                            tellus cras adipiscing. Posuere ac ut consequat semper viverra nam libero justo laoreet.
+                            Iaculis
+                            eu non diam phasellus vestibulum lorem sed risus ultricies.</p>
+                    </div>
+
+                    <h5><b>Rupert Wood</b></h5>
+                    <p class="m-0" style="color: #01b3a7;">Regular Client</p>
+                </div>
+            </article>
+            <article class="opinion ">
+                <div class="text-center">
+                    <img style="width: 100px; height: 100px;" src="../images/user-18-100x100.jpg" alt="">
+                    <div class="opinion-text">
+                        <p>Lacus vestibulum sed arcu non odio euismod lacinia. Pellentesque elit ullamcorper dignissim
+                            cras.
+                            Ultrices eros in cursus turpis massa tincidunt dui. Nunc pulvinar sapien et ligula
+                            ullamcorper
+                            malesuada proin. Commodo odio aenean sed adipiscing diam. Sed euismod nisi porta lorem
+                            mollis
+                            aliquam.</p>
+                    </div>
+                    <h5><b>Samantha Brown</b></h5>
+                    <p class="m-0" style="color: #01b3a7;">Regular Client</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid p-0" style="height: 350px;">
+
+            <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.4"
+                data-image-src="../images/parallax-1-1920x850.jpg"
+                style="height: 350px;">
+            </div>
+            <div class="parallax-content section-xl context-dark bg-overlay-26">
+                <div class="container">
+                    <div class="row justify-content-center main-content">
+                        <div class="col-sm-6 col-md-5 col-lg-3 text-center">
+                            <div ><span class="num">12</span></div>
+                            <h5>AWARDS</h5>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-3 text-center second">
+                            <div ><span class="num">194</span></div>
+                            <h5>TOURS</h5>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-3 text-center">
+                            <div><span class="num">2</span>
+                            <span>K</span></div>
+                            <h5>TRAVELERS</h5>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-3 text-center" style="border: none;">
+                            <div><span class="num">25</span></div>
+                            <h5>TEAM MEMBERS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </section>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4 contact" style="padding: 50px 15px 30px;">
+                <div class="col-sm-6 col-md-6 col-lg-4  contact" style="padding: 50px 15px 30px;">
                     <h6 class="text-uppercase"><b>Contact us</b></h6>
                     <ul class="p-0">
                         <li class="d-flex">
@@ -355,7 +441,9 @@
             </div>
         </div>
     </footer>
-
+<script type="text/javascript">
+    $(".num").counterUp({delay:10, time:1000});
+</script>
 </body>
 
 </html>

@@ -62,7 +62,7 @@
   max-width: 100%;
   height: auto;
 }
-.nav-link {
+.nav-tabs .nav-link {
   color: gray;
   position: relative;
   top: 2px;
@@ -159,15 +159,42 @@
 
 .circle-wrap .circle .mask.full,
 .circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
   transform: rotate(130deg);
 }
 .circle-wrap .circle .mask-second.full,
 .circle-wrap .circle .fill-second {
+  animation: fill-second ease-in-out 3s;
   transform: rotate(159deg);
 }
 .circle-wrap .circle .mask-third.full,
 .circle-wrap .circle .fill-third {
+  animation: fill-third ease-in-out 3s;
   transform: rotate(178deg);
+}
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(130deg);
+  }
+}
+@keyframes fill-second {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(159deg);
+  }
+}
+@keyframes fill-third {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(178deg);
+  }
 }
 
 .circle-wrap .inside-circle {
@@ -238,10 +265,10 @@
   }
 }
 @media (max-width: 438px) {
-    .tabs-block .list {
-      columns: 1;
-    }
+  .tabs-block .list {
+    columns: 1;
   }
+}
 @media (max-width: 991px) {
   .image-block {
     text-align: center !important;
@@ -269,34 +296,126 @@
   }
 }
 
-
 /* Owl carousel */
-.owl-carousel p{
-    position: relative;
-    top: 15px;
-    font-size: 20px;
-    text-align: center;
+.section-fluid .owl-carousel p {
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+  text-align: center;
 }
-.owl-carousel{
-    margin: 30px 0;
-}
-.owl-carousel img:hover{
-filter: brightness(0.7);
-}
-.increase-icon{
-    display: none;
-    position: relative;
-    bottom: 150px;
-    display: flex;
-    justify-content: center;
-}
-.increase-icon i{
-    display: none;
-    color: white;
-    font-size: 30px;
-}
-.increase-icon i:hover{
-    display: block;
-    position: absolute;
+.owl-carousel {
+  margin: 30px 0;
 }
 
+/* Opini block */
+
+.opinion-block img {
+  border-radius: 50px;
+  margin: 10px auto;
+}
+
+.opinion-block .opinion {
+  box-shadow: 2px 7px 6px 0 rgba(0, 0, 0, 0.17);
+  margin: 15px;
+}
+.opinion .opinion-text::before {
+  left: 0;
+  top: 130px;
+  content: "\201C";
+  color: #01b3a7;
+  font-size: 50px;
+  position: absolute;
+  margin-left: 25px;
+}
+.opinion .opinion-text::after {
+  right: 0;
+  bottom: 80px;
+  content: "\201C";
+  color: #01b3a7;
+  font-size: 50px;
+  position: absolute;
+  margin-right: 25px;
+}
+.opinion .text-center {
+  padding: 25px;
+}
+.owl-modern .owl-stage-outer::before {
+  position: absolute;
+  content: "";
+  right: 70px;
+  left: 70px;
+  height: 18px;
+  background: #e8e8e8;
+  z-index: -1;
+  top: 0;
+}
+.owl-modern .owl-stage-outer::after {
+  top: 9px;
+  right: 50px;
+  left: 50px;
+  height: 9px;
+  background: #f4f4f4;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.opinion .text-center p {
+  margin-top: 15px;
+}
+@media (min-width: 1200px) {
+  .opinion .text-center {
+    padding: 45px 50px;
+  }
+}
+@media (max-width: 800px) {
+  .opinion .text-center p {
+    font-size: 15px;
+  }
+}
+
+/* Parralax */
+
+.bg-overlay-26 {
+  position: relative;
+  bottom: 60%;
+  color: white;
+}
+.bg-overlay-26 span {
+  font-size: 70px;
+}
+.main-content .text-center {
+  border-right: 1px solid #d7d7d7;
+}
+
+.parallax-mirror {
+  margin-top: 50px;
+  filter: brightness(0.5);
+}
+
+@media (max-width: 991px) {
+  .bg-overlay-26 span {
+    font-size: 50px;
+  }
+  .bg-overlay-26 {
+    bottom: 77%;
+  }
+  .bg-overlay-26 .text-center {
+    margin: 15px 0px;
+  }
+  .bg-overlay-26 h5 {
+    font-size: 13px;
+  }
+  .bg-overlay-26 .second {
+    border: none;
+  }
+}
+@media (max-width: 575px) {
+  .bg-overlay-26 .text-center {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .bg-overlay-26 {
+    bottom: 85%;
+  }
+}
