@@ -12,9 +12,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="../header/header.css">
    <link rel="stylesheet" href="typography.css">
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://use.fontawesome.com/6a1fb96aa0.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="../header/header.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -53,18 +58,18 @@
    <nav class="navbar navbar-expand-lg bg-light navbar-light w-100 " id="mainNav">
       <ul class="navbar-nav left-navbar">
          <li class="nav-item ">
-             <a class="nav-link" href="/main/main.html">Home</a>
+            <a class="nav-link" href="/main/main.html">Home</a>
          </li>
          <li class="nav-item ">
-             <a class="nav-link" href="/about/about.html">About</a>
+            <a class="nav-link" href="/about/about.html">About</a>
          </li>
          <li class="nav-item active">
-             <a class="nav-link" href="/typography/typograghy.html">Typography</a>
+            <a class="nav-link" href="/typography/typograghy.html">Typography</a>
          </li>
          <li class="nav-item">
-             <a class="nav-link " href="/contact_us/contact_us.html">Contact us</a>
+            <a class="nav-link " href="/contact_us/contact_us.html">Contact us</a>
          </li>
-     </ul>
+      </ul>
       <ul class="navbar-nav right-navbar">
          <li>
             <a href="" class="nav-link icon fa fa-facebook"></a>
@@ -81,22 +86,131 @@
       </ul>
    </nav>
 
-    <!-- Breadcrumb -->
-    <section>
+   <!-- Breadcrumb -->
+   <section>
       <div class="custom-breadcrumb">
-          <div class="text-path">
-              <h1><b>Typography</b></h1>
-              <div class="d-flex justify-content-center">
-                  <h5 class="text-uppercase"><a href="/main/main.html">Home</a></h5>
-                  <h5 class="text-uppercase">/</h5>
-                  <h5 class="text-uppercase" style="opacity: 0.7;">Typography</h5>
-              </div>
-          </div>
-          <div class="box-position">
-          </div>
+         <div class="text-path">
+            <h1><b>Typography</b></h1>
+            <div class="d-flex justify-content-center">
+               <h5 class="text-uppercase"><a href="/main/main.html">Home</a></h5>
+               <h5 class="text-uppercase">/</h5>
+               <h5 class="text-uppercase" style="opacity: 0.7;">Typography</h5>
+            </div>
+         </div>
+         <div class="box-position">
+         </div>
       </div>
-  </section>
+   </section>
 
+   <!-- Headings -->
+   <section class="headings">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-7">
+               <ul class=" p-0" style="list-style: none;">
+                  <li style="margin-bottom: 40px;">
+                     <h1 class="heading-1">H1 Heading</h1>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </li>
+                  <li style="margin-bottom: 40px;">
+                     <h2 class="heading-2">H2 Heading</h2>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </li>
+                  <li style="margin-bottom: 40px;">
+                     <h3 class="heading-3">H3 Heading</h3>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </li>
+                  <li style="margin-bottom: 40px;">
+                     <h4 class="heading-4">H4 Heading</h4>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </li>
+                  <li style="margin-bottom: 40px;">
+                     <h5 class="heading-5">H5 Heading</h5>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website
+                        will find exactly what he/she is looking for. With advanced features of activating account and
+                        new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-xl-5 d-none d-xl-block">
+               <div style="margin-left: 40px;">
+                  <h1 class="heading-1">H1 Heading</h1>
+                  <h2 class="heading-2">H2 Heading</h2>
+                  <h3 class="heading-3">H3 Heading</h3>
+                  <h4 class="heading-4">H4 Heading</h4>
+                  <h5 class="heading-5">H5 Heading</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- HTML Text elements -->
+   <section class="text-elements">
+      <div class="container">
+         <h3>HTML Text Elements</h3>
+         <p>Welcome to our wonderful world. This is a <b> bold </b> text <mark>This is a highlighted text</mark>We
+            sincerely hope that each
+            and every user entering our website will find exactly what he/she is looking for. With advanced features of
+            activating account and new login <span class="tooltip-custom" data-toggle="tooltip" data-placement="top"
+               title data-original-title="Default text" style="background-color:lightgrey ;">Tooltips</span> widgets,
+            you will definitely have a great
+            experience of using our
+            web page. <span style="text-decoration: line-through;">This is a strikethrough text</span> <span
+               style="text-decoration: underline;"> This is an underlined text.</span> <a href="#"
+               style="color: #01b3a7;"> Link</a></p>
+      </div>
+   </section>
+
+   <!-- Blockquote and lists -->
+   <section class="lists" style="margin-top: 80px; margin-bottom: 50px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-xl-6" style="margin-bottom: 40px;">
+               <h3>Ordered & Unordered Lists</h3>
+               <div class="row">
+                  <div class="col-sm-6">
+                     <ol>
+                        <li>Consulting</li>
+                        <li>Customer Service</li>
+                        <li>Innovation</li>
+                        <li>Management</li>
+                        <li>Ethics</li>
+                     </ol>
+                  </div>
+                  <div class="col-sm-6">
+                     <ul>
+                        <li>Consulting</li>
+                        <li>Customer Service</li>
+                        <li>Innovation</li>
+                        <li>Management</li>
+                        <li>Ethics</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-8 col-xl-6" style="margin-bottom: 40px;">
+               <div>
+                  <h3>Blockquote</h3>
+                  <article>
+                     <div class="quote-classic-text">
+                        <p>We use only trusted, verified content, so you can believe our every word.</p>
+                     </div>
+                  </article>
+                  <h6 style="color: #50ba87; font-size: 18px;">Catherine Williams</h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
    <footer>
       <div class="container">
          <div class="row">
@@ -155,7 +269,11 @@
          </div>
       </div>
    </footer>
-
+   <script>
+      $(document).ready(function () {
+         $('[data-toggle="tooltip"]').tooltip();
+      });
+   </script>
 </body>
 
 </html>
