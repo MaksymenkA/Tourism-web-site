@@ -1,3 +1,6 @@
+.navbar-outer{
+  display: flex;
+}
 .box-position {
   background-image: url(../images/sea_animation.jpg);
   position: absolute;
@@ -35,7 +38,20 @@
   font-size: 45px;
   color: white;
 }
-
+.custom-breadcrumb::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+@media (min-width: 990px) {
+  .custom-breadcrumb {
+    padding: 11% 0;
+  }
+}
 @keyframes bgPos {
   25% {
     transform: translate3d(-150px, -150px, 0) rotate(0.001deg);
@@ -44,11 +60,7 @@
     transform: translate3d(0, 0, 0) rotate(0.001deg);
   }
 }
-@media (min-width: 990px) {
-  .custom-breadcrumb {
-    padding: 11% 0;
-  }
-}
+
 
 /* WHy choose us */
 .nav-tabs {
@@ -72,7 +84,6 @@
   border-color: white white transparent #fff !important;
   color: #01b3a7;
 }
-/* .nav-tabs .nav-item.show .nav-link, */
 .nav-tabs .nav-link.active {
   border-color: white white #01b3a7 #fff !important;
   border-bottom: 3px solid #01b3a7;
