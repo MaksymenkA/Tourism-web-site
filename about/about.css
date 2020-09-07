@@ -329,7 +329,7 @@
 }
 .opinion .opinion-text::after {
   right: 0;
-  bottom: 80px;
+  bottom: 70px;
   content: "\201C";
   color: #01b3a7;
   font-size: 50px;
