@@ -1,0 +1,133 @@
+@media (min-width: 1200) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.contact-numbers i,
+.chat i,
+.address i {
+  font-size: 60px;
+  color: #01b3a7;
+  margin-bottom: 15px;
+}
+.contact-numbers,
+.chat,
+.address {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  transition: all 0.3s ease;
+  padding: 0px 40px;
+  /* border: 1px solid #e1e1e1; */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+}
+.contact-numbers:hover,
+.chat:hover,
+.address:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+}
+
+.contact-numbers p,
+.chat p,
+.address p {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.025em;
+  margin-bottom: 0px;
+}
+.contact-numbers a,
+.chat a,
+.address a {
+  color: black;
+}
+.contact-numbers a:hover,
+.chat a:hover,
+.address a:hover {
+  color: #50ba87;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .contact-numbers,
+  .chat,
+  .address {
+    box-shadow: none;
+    border: 1px solid #e1e1e1;
+  }
+}
+
+/* Get in touch */
+.title-top {
+  margin: 20px 10px;
+  align-items: center;
+}
+.title-top p {
+  font-size: 18px;
+  margin-left: 40px;
+  border-left: 1px solid lightgray;
+  padding: 5px 15px 0;
+}
+.title-top h3 {
+  flex-shrink: 0;
+  font-size: 36px;
+  color: black;
+}
+
+form input,
+form textarea {
+  border: none;
+  background-color: #f7f7f7;
+  padding: 15px;
+  color: black;
+  margin: 10px;
+  width: -webkit-fill-available;
+}
+form textarea {
+  height: 206px;
+  min-width: 350px;
+}
+form button {
+  margin: 10px;
+  padding: 15px 45px;
+  color: white;
+  background-color: #01b3a7;
+  border: 2px solid #01b3a7;
+}
+form {
+  margin-bottom: 50px;
+}
+form button:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  transition: 250ms all ease-in-out;
+}
+@media (max-width: 768px) {
+  .title-top h3 {
+    font-size: 28px;
+  }
+  .title-top p {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  form button {
+    width: -webkit-fill-available;
+  }
+}
+@media (max-width: 500px) {
+  .title-top {
+    display: block !important;
+    text-align: center;
+  }
+  .title-top p {
+    border-top: 1px solid lightgray;
+    border-left: none;
+    margin-top: 15px;
+    padding-top: 10px;
+    margin-left: 0;
+  }
+}
