@@ -1,3 +1,6 @@
+.navbar-outer{
+  display: flex;
+}
 .box-position {
   background-image: url(../images/sea_animation.jpg);
   position: absolute;
