@@ -4,61 +4,57 @@
   }
 }
 
-.contact-numbers i,
-.chat i,
-.address i {
-  font-size: 60px;
-  color: #01b3a7;
-  margin-bottom: 15px;
-}
-.contact-numbers,
-.chat,
-.address {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
-  transition: all 0.3s ease;
-  padding: 0px 40px;
-  /* border: 1px solid #e1e1e1; */
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
-}
-.contact-numbers:hover,
-.chat:hover,
-.address:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+.contacts article:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.contact-numbers p,
-.chat p,
-.address p {
+.contacts article p{
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.025em;
   margin-bottom: 0px;
 }
-.contact-numbers a,
-.chat a,
-.address a {
-  color: black;
-}
-.contact-numbers a:hover,
-.chat a:hover,
-.address a:hover {
+
+.contacts article a:hover {
   color: #50ba87;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 992px) {
-  .contact-numbers,
-  .chat,
-  .address {
-    box-shadow: none;
-    border: 1px solid #e1e1e1;
+
+.contacts article{
+  text-align: center;
+  border: rgba(0, 0, 0, 0.17) 1px solid;
+  margin: 35px 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+}
+.contacts article i,
+.contacts article i,
+.contacts article i {
+  font-size: 60px;
+  color: #01b3a7;
+  margin-bottom: 15px;
+}
+.contacts article a,
+.contacts article a,
+.contacts article a {
+  color: black;
+}
+.contacts .container{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 575px){
+  .contacts article{
+    flex: 0 0 70%;
+    max-width: 70%;
   }
 }
+
 
 /* Get in touch */
 .title-top {
@@ -88,7 +84,7 @@ form textarea {
 }
 form textarea {
   height: 206px;
-  min-width: 350px;
+  min-width: 300px;
 }
 form button {
   margin: 10px;
@@ -131,3 +127,4 @@ form button:hover {
     margin-left: 0;
   }
 }
+
